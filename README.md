@@ -6,3 +6,5 @@
 2. run command `node solution.js`
 
 ### Days track:
+
+- [x] [Day 1: Secret Entrance](https://github.com/kkiaune/aoc-2025/tree/main/day-1)
