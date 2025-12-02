@@ -8,3 +8,5 @@
 ### Days track:
 
 - [x] [Day 1: Secret Entrance](https://github.com/kkiaune/aoc-2025/tree/main/day-1)
+- [x] [Day 2: Gift Shop](https://github.com/kkiaune/aoc-2025/tree/main/day-2)
+- [ ] TBD
