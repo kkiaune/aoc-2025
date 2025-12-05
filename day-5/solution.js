@@ -13,9 +13,16 @@ input.forEach((line) => {
   }
 });
 
-const removeOverlappingRanges = () => {
+const firstSolution = () =>
+  availableIDs.filter((id) =>
+    freshIDsRanges.some((range) => id >= range[0] && id <= range[1])
+  ).length;
+
+console.log("first part result:", firstSolution());
+
+const secondSolution = () => {
+  let total = 0;
   const sorted = [...freshIDsRanges].sort((a, b) => a[0] - b[0]);
-  const result = [];
   let current = sorted[0];
 
   for (let i = 1; i < sorted.length; i++) {
@@ -28,28 +35,16 @@ const removeOverlappingRanges = () => {
 
     // new range begins
     if (next[0] > current[1]) {
-      result.push(current);
+      total += current[1] - current[0] + 1;
       current = next;
     } else {
       current[1] = next[1];
     }
   }
 
-  result.push(current);
+  total += current[1] - current[0] + 1;
 
-  return result;
+  return total;
 };
-
-const mergedFreshIDsRanges = removeOverlappingRanges();
-
-const firstSolution = () =>
-  availableIDs.filter((id) =>
-    mergedFreshIDsRanges.some((range) => id >= range[0] && id <= range[1])
-  ).length;
-
-console.log("first part result:", firstSolution());
-
-const secondSolution = () =>
-  mergedFreshIDsRanges.reduce((acc, range) => acc + range[1] - range[0] + 1, 0);
 
 console.log("second part result:", secondSolution());
