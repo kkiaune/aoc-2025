@@ -14,4 +14,5 @@
 - [x] [Day 5: Cafeteria](https://github.com/kkiaune/aoc-2025/tree/main/day-5)
 - [x] [Day 6: Trash Compactor](https://github.com/kkiaune/aoc-2025/tree/main/day-6)
 - [x] [Day 7: Laboratories](https://github.com/kkiaune/aoc-2025/tree/main/day-7)
+- [x] [Day 8: Playground](https://github.com/kkiaune/aoc-2025/tree/main/day-8)
 - [ ] TBD
