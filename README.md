@@ -16,4 +16,5 @@
 - [x] [Day 7: Laboratories](https://github.com/kkiaune/aoc-2025/tree/main/day-7)
 - [x] [Day 8: Playground](https://github.com/kkiaune/aoc-2025/tree/main/day-8)
 - [x] [Day 9: Movie Theater](https://github.com/kkiaune/aoc-2025/tree/main/day-9)
+- [x] [Day 10: Factory (NO PART 2)](https://github.com/kkiaune/aoc-2025/tree/main/day-10)
 - [ ] TBD
